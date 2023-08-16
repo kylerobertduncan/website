@@ -258,8 +258,11 @@ img {
 }
 
 a {
-  color: inherit;
+  color: darkblue;
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 a,
@@ -277,7 +280,7 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.15);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,7 +314,11 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 .light {
@@ -333,6 +340,44 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
   width: 100%;
+}
+section:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+section p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0.25rem 0;
+}
+
+section.skills ul {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+footer a {
+  font-size: 1rem;
 }
