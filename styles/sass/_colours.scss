@@ -1,0 +1,42 @@
+$Background: #FFFBE9;
+$Alternate: rgba(215, 220, 196, 0.25);
+$Faded: #DAE2B6;
+$Feature: rgba(204, 214, 166, 0.95);
+$LinkHover: #9ea87a;
+$LinkVisited: #727c51;
+$Link: #49532a;
+$Text: #232d03;
+
+body {
+  background-color: $Background;
+  color: $Text;
+}
+
+section:nth-child(odd) {
+  background: linear-gradient($Background, $Alternate 10% 90%, $Background);
+}
+
+nav,
+footer {
+  background-color: $Feature;
+}
+
+a {
+  color: $Link;
+  &:visited {
+    color: $LinkVisited;
+  }
+  &:focus,
+  &:hover {
+    color: $LinkHover
+  }
+}
+
+button {
+  color: $Link;
+  background-color: transparent;
+  &:focus,
+  &:hover {
+    color: $LinkHover;
+  }
+}

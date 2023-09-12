@@ -1,6 +1,5 @@
 html {
   line-height: 1.15;
-  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -8,21 +7,13 @@ body {
   margin: 0;
 }
 
-article, aside, footer, header, nav, section {
+main {
   display: block;
 }
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-}
-
-figcaption, figure, main {
-  display: block;
-}
-
-figure {
-  margin: 1em 40px;
+  margin: 0.67em0;
 }
 
 hr {
@@ -39,18 +30,13 @@ pre {
 
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;
 }
 
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-}
-
-b, strong {
-  font-weight: inherit;
+  -webkit-text-decoration: underlinedotted;
+          text-decoration: underlinedotted;
 }
 
 b, strong {
@@ -60,15 +46,6 @@ b, strong {
 code, kbd, samp {
   font-family: monospace, monospace;
   font-size: 1em;
-}
-
-dfn {
-  font-style: italic;
-}
-
-mark {
-  background-color: #ff0;
-  color: #000;
 }
 
 small {
@@ -90,25 +67,12 @@ sup {
   top: -0.5em;
 }
 
-audio, video {
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
 img {
   border-style: none;
 }
 
-svg:not(:root) {
-  overflow: hidden;
-}
-
 button, input, optgroup, select, textarea {
-  font-family: sans-serif;
+  font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -122,7 +86,7 @@ button, select {
   text-transform: none;
 }
 
-button, html [type=button], [type=reset], [type=submit] {
+button, [type=button], [type=reset], [type=submit] {
   -webkit-appearance: button;
 }
 
@@ -132,11 +96,11 @@ button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-fo
 }
 
 button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1pxdottedButtonText;
 }
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: 0.35em0 0.75em0 0.625em;
 }
 
 legend {
@@ -150,7 +114,6 @@ legend {
 }
 
 progress {
-  display: inline-block;
   vertical-align: baseline;
 }
 
@@ -173,7 +136,7 @@ textarea {
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -182,16 +145,12 @@ textarea {
   font: inherit;
 }
 
-details, menu {
+details {
   display: block;
 }
 
 summary {
   display: list-item;
-}
-
-canvas {
-  display: inline-block;
 }
 
 template {
@@ -236,9 +195,9 @@ html {
 }
 
 body {
-  background-color: #5F939A;
   cursor: default;
   font-size: 125%;
+  position: relative;
 }
 
 h1, h2, button {
@@ -247,7 +206,6 @@ h1, h2, button {
 }
 
 h3, a, p {
-  color: black;
   font-family: "Bitter", serif;
   margin: 0;
 }
@@ -257,12 +215,10 @@ img {
   width: 100%;
 }
 
-a {
-  color: darkblue;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a,
@@ -270,17 +226,64 @@ button {
   cursor: pointer;
 }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 1920px;
-  width: 80%;
+h1 {
+  font-size: 5rem;
 }
 
-header {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  background-color: rgba(255, 255, 255, 0.1);
+h2 {
+  font-size: 2rem;
+}
+h2 a {
+  font-family: "Raleway", sans-serif;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.light {
+  font-weight: 200;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+nav button {
+  border: none;
+  padding: 0.5rem 0;
+}
+nav ul {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+nav ul.show {
+  height: 234px;
+}
+nav .contact {
+  text-align: right;
+}
+nav .contact .contactList {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,7 +291,25 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+nav .contact .contactList a {
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100vh - 51px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -309,22 +330,6 @@ header h1 span {
   line-height: 0.85;
 }
 
-h1 {
-  font-size: 5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
-
-.light {
-  font-weight: 200;
-}
-
 section {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -343,8 +348,8 @@ section {
   padding: 0 2rem;
   width: 100%;
 }
-section:nth-child(odd) {
-  background-color: rgba(255, 255, 255, 0.1);
+section h2 {
+  margin-bottom: 1rem;
 }
 section p {
   font-size: 1.1rem;
@@ -352,20 +357,20 @@ section p {
   margin: 0.25rem 0;
 }
 
+section.portfolio * {
+  margin-bottom: 1rem;
+}
+
 section.skills ul {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-footer {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  background-color: rgba(255, 255, 255, 0.1);
+footer .wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,6 +384,77 @@ footer {
   padding: 1rem 2rem;
   width: 100%;
 }
-footer a {
+footer .wrapper a {
   font-size: 1rem;
+}
+
+body {
+  background-color: #FFFBE9;
+  color: #232d03;
+}
+
+section:nth-child(odd) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFBE9), color-stop(10%, rgba(215, 220, 196, 0.25)), to(#FFFBE9));
+  background: linear-gradient(#FFFBE9, rgba(215, 220, 196, 0.25) 10% 90%, #FFFBE9);
+}
+
+nav,
+footer {
+  background-color: rgba(204, 214, 166, 0.95);
+}
+
+a {
+  color: #49532a;
+}
+a:visited {
+  color: #727c51;
+}
+a:focus, a:hover {
+  color: #9ea87a;
+}
+
+button {
+  color: #49532a;
+  background-color: transparent;
+}
+button:focus, button:hover {
+  color: #9ea87a;
+}
+
+@media (min-width: 600px) {
+  section.skills .wrapper ul {
+    -webkit-columns: 3;
+       -moz-columns: 3;
+            columns: 3;
+  }
+  section.skills .wrapper ul li {
+    margin-bottom: 0.5rem;
+  }
+  section.skills .wrapper ul li p {
+    margin: 0;
+  }
+}
+@media (min-width: 750px) {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 66%;
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper {
+    width: 55%;
+  }
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  section p {
+    font-size: 1.25rem;
+  }
 }
