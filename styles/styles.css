@@ -194,19 +194,23 @@ html {
   overflow: hidden;
 }
 
+nav, footer, h1, h2, a, button {
+  font-family: "Raleway", sans-serif;
+  text-transform: lowercase;
+}
+
+h3, p, p a {
+  font-family: "Bitter", serif;
+  text-transform: none;
+}
+
 body {
   cursor: default;
   font-size: 125%;
   position: relative;
 }
 
-h1, h2, button {
-  font-family: "Raleway", sans-serif;
-  margin: 0;
-}
-
-h3, a, p {
-  font-family: "Bitter", serif;
+footer, h1, h2, h3, p, ul, a, button {
   margin: 0;
 }
 
@@ -217,12 +221,10 @@ img {
 
 ul {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
-a,
-button {
+a, button, .link {
   cursor: pointer;
 }
 
@@ -232,9 +234,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-}
-h2 a {
-  font-family: "Raleway", sans-serif;
 }
 
 h3 {
@@ -269,7 +268,16 @@ nav button {
   padding: 0.5rem 0;
 }
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   overflow: hidden;
   -webkit-transition: height 0.5s ease-in-out;
   transition: height 0.5s ease-in-out;
@@ -284,18 +292,6 @@ nav .contact .contactList {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-nav .contact .contactList a {
-  font-family: "Raleway", sans-serif;
 }
 
 header {
@@ -356,36 +352,23 @@ section p {
   line-height: 1.5;
   margin: 0.25rem 0;
 }
-
-section.portfolio * {
-  margin-bottom: 1rem;
+section li {
+  font-size: 1.1rem;
 }
 
-section.skills ul {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+.link {
+  text-decoration: underline;
 }
 
-footer .wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1rem 2rem;
-  width: 100%;
+section.portfolio p,
+section.portfolio li {
+  margin: 1rem 0;
 }
-footer .wrapper a {
-  font-size: 1rem;
+
+footer {
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 body {
@@ -400,16 +383,20 @@ section:nth-child(odd) {
 
 nav,
 footer {
-  background-color: rgba(204, 214, 166, 0.95);
+  background-color: rgba(204, 214, 166, 0.9);
 }
 
-a {
+a,
+.link {
   color: #49532a;
 }
-a:visited {
+a:visited,
+.link:visited {
   color: #727c51;
 }
-a:focus, a:hover {
+a:focus, a:hover,
+.link:focus,
+.link:hover {
   color: #9ea87a;
 }
 
@@ -422,15 +409,19 @@ button:focus, button:hover {
 }
 
 @media (min-width: 600px) {
-  section.skills .wrapper ul {
+  section p,
+  section li {
+    margin: 0.5rem 0;
+  }
+  section.skills ul {
     -webkit-columns: 3;
        -moz-columns: 3;
             columns: 3;
+    -webkit-column-gap: 1rem;
+       -moz-column-gap: 1rem;
+            column-gap: 1rem;
   }
-  section.skills .wrapper ul li {
-    margin-bottom: 0.5rem;
-  }
-  section.skills .wrapper ul li p {
+  section.skills ul p {
     margin: 0;
   }
 }
@@ -439,6 +430,14 @@ button:focus, button:hover {
     margin: 0 auto;
     max-width: 1920px;
     width: 66%;
+  }
+  section p {
+    margin: 0.75rem 0;
+  }
+  section.skills ul {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
   }
 }
 @media (min-width: 1000px) {
@@ -454,7 +453,9 @@ button:focus, button:hover {
   h3 {
     font-size: 2rem;
   }
-  section p {
+  section p,
+  section li {
     font-size: 1.25rem;
+    margin: 1rem 0;
   }
 }

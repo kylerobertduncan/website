@@ -1,7 +1,7 @@
 $Background: #FFFBE9;
 $Alternate: rgba(215, 220, 196, 0.25);
 $Faded: #DAE2B6;
-$Feature: rgba(204, 214, 166, 0.95);
+$Feature: rgba(204, 214, 166, 0.9);
 $LinkHover: #9ea87a;
 $LinkVisited: #727c51;
 $Link: #49532a;
@@ -21,7 +21,8 @@ footer {
   background-color: $Feature;
 }
 
-a {
+a,
+.link {
   color: $Link;
   &:visited {
     color: $LinkVisited;

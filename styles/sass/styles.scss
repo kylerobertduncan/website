@@ -7,6 +7,16 @@ $raleway: 'Raleway', sans-serif;
 $bitter: 'Bitter', serif;
 // wieghts: 200, 300, 400, 500
 
+nav, footer, h1, h2, a, button {
+  font-family: $raleway;
+  text-transform: lowercase;
+}
+
+h3, p, p a {
+  font-family: $bitter;
+  text-transform: none;
+}
+
 // GENERAL STYLES
 body {
   cursor: default;
@@ -14,13 +24,7 @@ body {
   position: relative;
 }
 
-h1, h2, button {
-  font-family: $raleway;
-  margin: 0;
-}
-
-h3, a, p {
-  font-family: $bitter;
+footer, h1, h2, h3, p, ul, a, button {
   margin: 0;
 }
 
@@ -31,12 +35,10 @@ img {
 
 ul {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
-a,
-button {
+a, button, .link {
   cursor: pointer;
 }
 
@@ -46,9 +48,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  a {
-    font-family: $raleway;
-  }
 }
 
 h3 {
@@ -77,7 +76,10 @@ nav {
     padding: 0.5rem 0;
   }
   ul {
+    display: flex;
+    flex-direction: column;
     height: 0;
+    justify-content: space-around;
     overflow: hidden;
     transition: height 0.5s ease-in-out;
     &.show {
@@ -88,12 +90,6 @@ nav {
     text-align: right;
     .contactList {
       align-items: end;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      a {
-        font-family: $raleway;
-      }
     }
   }
 }
@@ -134,29 +130,25 @@ section {
     line-height: 1.5;
     margin: 0.25rem 0;
   }
-}
-
-section.portfolio * {
-  margin-bottom: 1rem;
-}
-
-section.skills {
-  ul {
-    justify-content: start;
+  li {
+    font-size: 1.1rem;
   }
+}
+
+.link {
+  text-decoration: underline;
+}
+
+section.portfolio p,
+section.portfolio li {
+  margin: 1rem 0;
 }
 
 // FOOTER
-footer .wrapper {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1rem 2rem;
-  width: 100%;
-  a {
-    font-size: 1rem;
-  }
+footer {
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 @import 'colours';
