@@ -194,7 +194,7 @@ html {
   overflow: hidden;
 }
 
-nav, footer, h1, h2, a, button {
+header, footer, h1, h2, a, button {
   font-family: "Raleway", sans-serif;
   text-transform: lowercase;
 }
@@ -248,7 +248,7 @@ h3 {
   font-weight: 200;
 }
 
-nav {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,11 +263,11 @@ nav {
   top: 0;
   width: 100%;
 }
-nav button {
+header button {
   border: none;
   padding: 0.5rem 0;
 }
-nav ul {
+header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,48 +282,16 @@ nav ul {
   -webkit-transition: height 0.5s ease-in-out;
   transition: height 0.5s ease-in-out;
 }
-nav ul.show {
+header ul.show {
   height: 273px;
 }
-nav .contact {
+header .contact {
   text-align: right;
 }
-nav .contact .contactList {
+header .contact .contactList {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-}
-
-header {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: calc(100vh - 51px);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 2rem;
-  width: 100%;
-}
-
-header h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-header h1 span {
-  line-height: 0.85;
 }
 
 section {
@@ -358,6 +326,22 @@ section li {
 
 .link {
   text-decoration: underline;
+}
+
+section.hero {
+  height: calc(100vh - 51px);
+}
+section.hero h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section.hero h1 span {
+  line-height: 0.85;
 }
 
 section.portfolio p,
@@ -395,7 +379,7 @@ section:nth-child(odd) {
   background: linear-gradient(#FFFBE9, rgba(215, 220, 196, 0.25) 10% 90%, #FFFBE9);
 }
 
-nav,
+header,
 footer {
   background-color: rgba(204, 214, 166, 0.9);
 }
