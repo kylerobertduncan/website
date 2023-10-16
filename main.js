@@ -6,6 +6,7 @@ function showMenu() {
 
 const sections = document.querySelectorAll("section");
 sections.forEach(s => {
+  if (s.className.includes("hero")) return;
   const li = document.createElement("li");
   
   const button = document.createElement("button");
@@ -15,7 +16,7 @@ sections.forEach(s => {
   navList.appendChild(li);
 
   button.addEventListener("click", () => {
-    showMenu();
+    if (navList.className.includes("show")) showMenu();
     setTimeout(() => {
       s.scrollIntoView({
         behavior: "smooth",
@@ -39,9 +40,12 @@ function goToSection(name) {
     inline: "start",
   });
 }
+
 const links = document.querySelectorAll(".link");
 links.forEach(l => {
+  l.ariaLabel = `Go to ${l} section`;
+  l.tabIndex = 0;
   l.addEventListener("click", () => {
-      goToSection(l.innerText.replaceAll(" ", "-"));
+    goToSection(l.innerText.replaceAll(" ", "-"));
   });
 });

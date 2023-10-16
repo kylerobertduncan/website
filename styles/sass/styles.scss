@@ -7,7 +7,7 @@ $raleway: 'Raleway', sans-serif;
 $bitter: 'Bitter', serif;
 // wieghts: 200, 300, 400, 500
 
-nav, footer, h1, h2, a, button {
+header, footer, h1, h2, a, button {
   font-family: $raleway;
   text-transform: lowercase;
 }
@@ -63,7 +63,7 @@ h3 {
 }
 
 // NAV
-nav {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,25 +95,6 @@ nav {
   }
 }
 
-// HEADER
-header {
-  align-items: start;
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 51px);
-  justify-content: center;
-  padding: 0 2rem;
-  width: 100%;
-}
-
-header h1 {
-  display: flex;
-  flex-direction: column;
-  span {
-    line-height: 0.85;
-  }
-}
-
 // SECTIONS
 section {
   align-items: start;
@@ -139,6 +120,19 @@ section {
 .link {
   text-decoration: underline;
 }
+
+// HERO
+section.hero {
+  height: calc(100vh - 51px);
+  h1 {
+    display: flex;
+    flex-direction: column;
+    span {
+      line-height: 0.85;
+    }
+  }
+}
+
 
 section.portfolio p,
 section.portfolio li {
