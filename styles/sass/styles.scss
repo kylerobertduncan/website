@@ -138,6 +138,16 @@ section.portfolio p,
 section.portfolio li {
   margin: 1rem 0;
 }
+section.portfolio li {
+  align-items: center;
+  display: flex;
+  a:last-child {
+    margin-left: 5px;
+    img {
+      max-width: 25px;
+    }
+  }
+}
 
 section.resume img {
   max-width: 300px;
