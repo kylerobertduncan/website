@@ -194,6 +194,11 @@ html {
   overflow: hidden;
 }
 
+html {
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+}
+
 header, footer, h1, h2, a, button {
   font-family: "Raleway", sans-serif;
   text-transform: lowercase;
@@ -310,6 +315,7 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 2rem;
+  scroll-snap-align: start;
   width: 100%;
 }
 section h2 {
@@ -328,9 +334,6 @@ section li {
   text-decoration: underline;
 }
 
-section.hero {
-  height: calc(100vh - 51px);
-}
 section.hero h1 {
   display: -webkit-box;
   display: -ms-flexbox;
