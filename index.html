@@ -1,56 +1,70 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400;500&family=Raleway:wght@200;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./favicon.png" type="image/x-icon" />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <title>Kyle Duncan</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400;500&family=Raleway:wght@200;300;400;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="icon" href="./favicon.png" type="image/x-icon">
-  <link href="./styles/styles.css" rel="stylesheet">
-  <title>Kyle Duncan</title>
-</head>
+  <body>
+    <header>
+      <nav class="menu">
+        <button aria-label="View site contents" class="navButton">menu</button>
+        <ul class="navList"></ul>
+      </nav>
 
-<body>
-  <header>
-    
-    <nav class="menu">
-      <button aria-label="View site contents" class="navButton">menu</button>
-      <ul class="navList"></ul>
-    </nav>
+      <nav class="contact">
+        <button aria-label="View contact options" class="contactButton">
+          contact
+        </button>
+        <ul class="contactList">
+          <li>
+            <a href="tel:+16476687846">phone</a>
+          </li>
+          <li>
+            <a href="mailto:kylerobertduncan@gmail.com">email</a>
+          </li>
+          <li>
+            <a
+              href="https://calendly.com/kylerobertduncan/kia-ora"
+              target="_blank"
+              >calendly</a
+            >
+          </li>
+          <li>
+            <a href="http://www.github.com/kylerobertduncan" target="_blank"
+              >github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kylerobertduncan/"
+              target="_blank"
+              >linkedin</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/user/b2xx3ygbv8l59nqg2m3goebik?si=6452524ab3294072"
+              target="_blank"
+              >spotify</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav class="contact">
-      <button aria-label="View contact options" class="contactButton">contact</button>
-      <ul class="contactList">
-        <li>
-          <a href="tel:+16476687846">phone</a>
-        </li>
-        <li>
-          <a href="mailto:kylerobertduncan@gmail.com">email</a>
-        </li>
-        <li>
-          <a href="https://calendly.com/kylerobertduncan/kia-ora">calendly</a>
-        </li>
-        <li>
-          <a href="http://www.github.com/kylerobertduncan">github</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/kylerobertduncan/">linkedin</a>
-        </li>
-        <li>
-          <a href="https://open.spotify.com/user/b2xx3ygbv8l59nqg2m3goebik?si=6452524ab3294072">spotify</a>
-        </li>
-      </ul>
-    </nav>
-
-  </header>
-  
-  <section class="hero">
+    <section class="hero">
       <div class="wrapper">
         <h1>
           <span>Kyle</span>
@@ -62,151 +76,238 @@
           <span>Developer</span>
         </h2>
       </div>
-  </section>
+    </section>
 
-  <section class="welcome">
-    <div class="wrapper">
-      <h2>
-        <a href="https://maoridictionary.co.nz/search?idiom=&phrase=&proverb=&loan=&histLoanWords=&keywords=kia+ora"
-          target="_blank" rel="noopener noreferrer">
-          Kia ora!
+    <section class="welcome">
+      <div class="wrapper">
+        <h2>
+          <a
+            href="https://maoridictionary.co.nz/search?idiom=&phrase=&proverb=&loan=&histLoanWords=&keywords=kia+ora"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Kia ora!
+          </a>
+        </h2>
+        <p>
+          Thanks for visiting. Here you'll find a
+          <span class="link">land acknowledgement</span> and
+          <span class="link">mihi</span> for my original home of Aotearoa (New
+          Zealand), and my current home of Hamilton in Ontario, Canada.
+        </p>
+        <p>
+          You can also find a short <span class="link">portfolio</span> of my
+          work at
+          <a href="https://torontoverse.com" target="_blank">Torontoverse</a>,
+          as well as a link to my <span class="link">resume</span>, which
+          outlines my experience, and an overview of my
+          <span class="link">skills</span> in software development.
+        </p>
+      </div>
+    </section>
+
+    <section class="land-acknowledgement">
+      <div class="wrapper">
+        <h2>Land Acknowledgement</h2>
+        <p>
+          I acknowledge that the land on which I live and work is the
+          traditional territory of the Erie, Neutral, Huron-Wendat,
+          Haudenosaunee and Mississaugas.
+        </p>
+
+        <p>
+          This land is covered by the Dish With One Spoon Wampum Belt Covenant,
+          which was an agreement between the Haudenosaunee and Anishinaabek to
+          share and care for the resources around the Great Lakes.
+        </p>
+
+        <p>
+          I further acknowledge that this land is covered by the Between the
+          Lakes Purchase, 1792, between the Crown and the Mississaugas of the
+          Credit First Nation.
+        </p>
+      </div>
+    </section>
+
+    <section class="mihi">
+      <div class="wrapper">
+        <h2>Mihi</h2>
+        <p>Ko Kyle Duncan tōku ingoa</p>
+        <p>Ko Pākehā tōku iwi</p>
+        <p>Nō Aerana me Kōtirana ōku tīpuna</p>
+        <p>Ko Margaret ko Ganges ngā waka</p>
+        <p>Ko Puketāpapa tōku maunga</p>
+        <p>Ko Manukau tōku moana</p>
+        <p>Kei te noho au ki Hamilton</p>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="wrapper">
+        <h2>Portfolio</h2>
+        <p>
+          These are a selection of over 100 articles I built for
+          <a href="https://torontoverse.com" target="_blank">Torontoverse</a> in
+          the past year. Click below to see the articles, or to visit the public
+          github repo, where you'll find a short explanation.
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://torontoverse.com/articles/VJyQIfWNEe2QNMS95RvTIA/we-mapped-toronto-auto-thefts"
+              target="_blank"
+              >Data analysis and visualisation</a
+            >
+            <a
+              aria-label="View on Github"
+              href="https://github.com/geomodulus/showcase/tree/main/articles/auto-thefts-2022#we-mapped-toronto-auto-thefts-here-are-the-hardest-hit-areas"
+              target="_blank"
+              ><img
+                src="./assets/github-mark.png"
+                alt="Github logo"
+                title="View on Github"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://torontoverse.com/articles/mhGVGtCQEeydZAJCrBIAAg/the-great-greater-toronto-and"
+              target="_blank"
+              >Interactive user-input game</a
+            >
+            <a
+              aria-label="View on Github"
+              href="https://github.com/geomodulus/showcase/tree/main/articles/greater-toronto-area-quiz#the-great-greater-toronto-and-hamilton-area-municipality-quiz"
+              target="_blank"
+              ><img
+                src="./assets/github-mark.png"
+                alt="Github logo"
+                title="View on Github"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://torontoverse.com/articles/oG6ETg3WEe2GHQJCrBIAAg/how-far-did-each-raptor"
+              target="_blank"
+              >Dynamic map based animation</a
+            >
+            <a
+              aria-label="View on Github"
+              href="https://github.com/geomodulus/showcase/tree/main/articles/raptors-distance-traveled#how-far-did-each-raptor-actually-travel-versus-the-rockets"
+              target="_blank"
+              ><img
+                src="./assets/github-mark.png"
+                alt="Github logo"
+                title="View on Github"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://torontoverse.com/articles/wKxu--hPEe2ybcS95RvTIA/north-to-richmond-hill-breaking"
+              target="_blank"
+              >Article explainer/illustration</a
+            >
+            <a
+              aria-label="View on Github"
+              href="https://github.com/geomodulus/showcase/tree/main/articles/yonge-subway-north-extension#north-to-richmond-hill-breaking-down-the-8-km-yonge-subway-extension"
+              target="_blank"
+              ><img
+                src="./assets/github-mark.png"
+                alt="Github logo"
+                title="View on Github"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume">
+      <div class="wrapper">
+        <h2>Resume</h2>
+        <a href="https://kylerobertduncan.github.io/resume/" target="_blank">
+          <img src="assets/resume-sm.png" alt="A preview image of my resume" />
+          <p>Click here to view my resume.</p>
         </a>
-      </h2>
-      <p>
-        Thanks for visiting. Here you'll find a <span class="link">land acknowledgement</span> and <span class="link">mihi</span> for my original home of Aotearoa (New Zealand), and my current home of Hamilton in Ontario, Canada.
-      </p>
-      <p>
-        You can also find a short <span class="link">portfolio</span> of my work at <a href="https://torontoverse.com">Torontoverse</a>, as well as a link to my <span class="link">resume</span>, which outlines my experience, and an overview of my <span class="link">skills</span> in software development.
-      </p>
-    </div>
-  </section>
+      </div>
+    </section>
 
+    <section class="skills">
+      <div class="wrapper">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <p class="bold">HTML5</p>
+            <p>WAVE (WCAG & A11Y compliance)</p>
+          </li>
+          <li>
+            <p class="bold">CSS3</p>
+            <p>SASS/SCSS, Tailwind</p>
+          </li>
+          <li>
+            <p class="bold">JavaScript</p>
+            <p>jQuery, React</p>
+          </li>
+          <li>
+            <p class="bold">API</p>
+            <p>Firebase, Mapbox GL JS, OpenAI</p>
+          </li>
+          <li>
+            <p class="bold">Data Processing & Visualization</p>
+            <p>Mapbox Studio, Placemark, QGIS</p>
+          </li>
+          <li>
+            <p class="bold">CI/CD</p>
+            <p>Git, Github, Linear</p>
+          </li>
+          <li>
+            <p class="bold">No-SQL/Graph databases</p>
+            <p>Go & Redis</p>
+          </li>
+          <li>
+            <p class="bold">Protocol Buffers</p>
+            <p>proto3, gRPC</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <section class="land-acknowledgement">
-    <div class="wrapper">
-      <h2>Land Acknowledgement</h2>
-      <p>I acknowledge that the land on which I live and work is the traditional territory of the Erie, Neutral, Huron-Wendat, Haudenosaunee and Mississaugas.</p>
-      
-      <p>This land is covered by the Dish With One Spoon Wampum Belt Covenant, which was an agreement between the Haudenosaunee and Anishinaabek to share and care for the resources around the Great Lakes.</p>
-      
-      <p>I further acknowledge that this land is covered by the Between the Lakes Purchase, 1792, between the Crown and the Mississaugas of the Credit First Nation.</p>
-    </div>
-  </section>
-  
-  <section class="mihi">
-    <div class="wrapper">
-      <h2>Mihi</h2>
-      <p>Ko Kyle Duncan tōku ingoa</p>
-      <p>Ko Pākehā tōku iwi</p>
-      <p>Nō Aerana me Kōtirana ōku tīpuna</p>
-      <p>Ko Margaret ko Ganges ngā waka</p>
-      <p>Ko Puketāpapa tōku maunga</p>
-      <p>Ko Manukau tōku moana</p>
-      <p>Kei te noho au ki Hamilton</p>
-    </div>
-  </section>
+    <section class="media">
+      <div class="wrapper">
+        <h2>Torontoverse in the media</h2>
+        <ul>
+          <li>
+            <a
+              href="https://blog.themvppod.com/2023/04/27/ep-1-4-the-future-of-local-media-and-advertising-chris-dinns-vision-for-torontoverse-and-beyondep-1-4/"
+              target="_blank"
+              >The Future of Local Media and Advertising: Chris Dinn’s Vision
+              for Torontoverse and Beyond</a
+            >
+            <p>The MVP Pod</p>
+          </li>
+          <li>
+            <a href="https://link.chtbl.com/CX38UCKv" target="_blank"
+              >How a Toronto News Startup Developed an AI Chatbot to Analyze &
+              Report on Municipal Budgets</a
+            >
+            <p>Newsroom Robots</p>
+          </li>
+          <li>
+            <a
+              href="https://www.michaelgeist.ca/2023/09/law-bytes-podcast-episode-177/"
+              target="_blank"
+              >Bill C-18’s Harm to Torontoverse and Investment in Innovative
+              Media in Canada</a
+            >
+            <p>The Law Bytes Podcast</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <section class="portfolio">
-    <div class="wrapper">
-      <h2>Portfolio</h2>
-      <p>These are a selection of over 100 articles I built for <a href="https://torontoverse.com">Torontoverse</a> in the past year. Click below to see the articles, or to visit the public github repo, where you'll find a short explanation.</p>
-      <ul>
-        <li>
-          <a href="https://torontoverse.com/articles/VJyQIfWNEe2QNMS95RvTIA/we-mapped-toronto-auto-thefts">Data analysis and visualisation</a>
-          <a aria-label="View on Github" href="https://github.com/geomodulus/showcase/tree/main/articles/auto-thefts-2022#we-mapped-toronto-auto-thefts-here-are-the-hardest-hit-areas"><img src="./assets/github-mark.png" alt="Github logo" title="View on Github"></a>
-        </li>
-        <li>
-          <a href="https://torontoverse.com/articles/mhGVGtCQEeydZAJCrBIAAg/the-great-greater-toronto-and">Interactive user-input game</a>
-          <a aria-label="View on Github" href="https://github.com/geomodulus/showcase/tree/main/articles/greater-toronto-area-quiz#the-great-greater-toronto-and-hamilton-area-municipality-quiz"><img src="./assets/github-mark.png" alt="Github logo" title="View on Github"></a>
-        </li>
-        <li>
-          <a href="https://torontoverse.com/articles/oG6ETg3WEe2GHQJCrBIAAg/how-far-did-each-raptor">Dynamic map based animation</a>
-          <a aria-label="View on Github" href="https://github.com/geomodulus/showcase/tree/main/articles/raptors-distance-traveled#how-far-did-each-raptor-actually-travel-versus-the-rockets"><img src="./assets/github-mark.png" alt="Github logo" title="View on Github"></a>
-        </li>
-        <li>
-          <a href="https://torontoverse.com/articles/wKxu--hPEe2ybcS95RvTIA/north-to-richmond-hill-breaking">Article explainer/illustration</a>
-          <a aria-label="View on Github" href="https://github.com/geomodulus/showcase/tree/main/articles/yonge-subway-north-extension#north-to-richmond-hill-breaking-down-the-8-km-yonge-subway-extension"><img src="./assets/github-mark.png" alt="Github logo" title="View on Github"></a>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <footer>
+      <a target="_blank" href="https://icons8.com/icon/110859/k">K icon</a> by
+      <a target="_blank" href="https://icons8.com">Icons8</a>
+    </footer>
 
-  <section class="resume">
-    <div class="wrapper">
-      <h2>Resume</h2>
-      <a href="https://kylerobertduncan.github.io/resume/">
-        <img src="assets/resume-sm.png" alt="A preview image of my resume">
-        <p>Click here to view my resume.</p>
-      </a>
-    </div>
-  </section>
-
-  <section class="skills">
-    <div class="wrapper">
-      <h2>Skills</h2>
-      <ul>
-        <li>
-          <p class="bold">HTML5</p>
-          <p>WAVE (WCAG & A11Y compliance)</p>
-        </li>
-        <li>
-          <p class="bold">CSS3</p>
-          <p>SASS/SCSS, Tailwind</p>
-        </li>
-        <li>
-          <p class="bold">JavaScript</p>
-          <p>jQuery, React</p>
-        </li>
-        <li>
-          <p class="bold">API</p>
-          <p>Firebase, Mapbox GL JS, OpenAI</p>
-        </li>
-        <li>
-          <p class="bold">Data Processing & Visualization</p>
-          <p>Mapbox Studio, Placemark, QGIS</p>
-        </li>
-        <li>
-          <p class="bold">CI/CD</p>
-          <p>Git, Github, Linear</p>
-        </li>
-        <li>
-          <p class="bold">No-SQL/Graph databases</p>
-          <p>Go & Redis</p>
-        </li>
-        <li>
-          <p class="bold">Protocol Buffers</p>
-          <p>proto3, gRPC</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="media">
-    <div class="wrapper">
-      <h2>Torontoverse in the media</h2>
-      <ul>
-        <li>
-          <a href="https://blog.themvppod.com/2023/04/27/ep-1-4-the-future-of-local-media-and-advertising-chris-dinns-vision-for-torontoverse-and-beyondep-1-4/">The Future of Local Media and Advertising: Chris Dinn’s Vision for Torontoverse and Beyond</a>
-          <p>The MVP Pod</p>
-        </li>
-        <li>
-          <a href="https://link.chtbl.com/CX38UCKv">How a Toronto News Startup Developed an AI Chatbot to Analyze & Report on Municipal Budgets</a>
-          <p>Newsroom Robots</p>
-        </li>
-        <li>
-          <a href="https://www.michaelgeist.ca/2023/09/law-bytes-podcast-episode-177/">Bill C-18’s Harm to Torontoverse and Investment in Innovative Media in Canada</a>
-          <p>The Law Bytes Podcast</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-      <a target="_blank" href="https://icons8.com/icon/110859/k">K icon</a> by <a target="_blank" href="https://icons8.com">Icons8</a>
-  </footer>
-
-  <script src="main.js"></script>
-
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
