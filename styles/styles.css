@@ -24,7 +24,7 @@ hr {
 }
 
 pre {
-  font-family: monospace, monospace;
+  font-family: monospace,monospace;
   font-size: 1em;
 }
 
@@ -44,7 +44,7 @@ b, strong {
 }
 
 code, kbd, samp {
-  font-family: monospace, monospace;
+  font-family: monospace,monospace;
   font-size: 1em;
 }
 
@@ -86,16 +86,16 @@ button, select {
   text-transform: none;
 }
 
-button, [type=button], [type=reset], [type=submit] {
+button, [type='button'], [type='reset'], [type='submit'] {
   -webkit-appearance: button;
 }
 
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+button::-moz-focus-inner, [type='button']::-moz-focus-inner, [type='reset']::-moz-focus-inner, [type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+button:-moz-focusring, [type='button']:-moz-focusring, [type='reset']:-moz-focusring, [type='submit']:-moz-focusring {
   outline: 1pxdottedButtonText;
 }
 
@@ -121,22 +121,22 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox], [type=radio] {
+[type='checkbox'], [type='radio'] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button, [type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type=search] {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -165,7 +165,7 @@ template {
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: "";
+  content: '';
   clear: both;
   height: 0;
 }
@@ -264,14 +264,17 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.5rem 1rem;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
 }
+
 header button {
   border: none;
   padding: 0.5rem 0;
 }
+
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,12 +290,15 @@ header ul {
   -webkit-transition: height 0.5s ease-in-out;
   transition: height 0.5s ease-in-out;
 }
+
 header ul.show {
   height: 273px;
 }
+
 header .contact {
   text-align: right;
 }
+
 header .contact .contactList {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -318,14 +324,17 @@ section {
   scroll-snap-align: start;
   width: 100%;
 }
+
 section h2 {
   margin-bottom: 1rem;
 }
+
 section p {
   font-size: 1.1rem;
   line-height: 1.5;
   margin: 0.25rem 0;
 }
+
 section li {
   font-size: 1.1rem;
 }
@@ -343,6 +352,7 @@ section.hero h1 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 section.hero h1 span {
   line-height: 0.85;
 }
@@ -360,9 +370,11 @@ section.portfolio li {
   display: -ms-flexbox;
   display: flex;
 }
+
 section.portfolio li a:last-child {
   margin-left: 5px;
 }
+
 section.portfolio li a:last-child img {
   max-width: 25px;
 }
@@ -374,9 +386,11 @@ section.resume img {
 section.media li {
   margin: 1rem 0;
 }
+
 section.media li a {
   text-transform: none;
 }
+
 section.media li p {
   font-style: italic;
 }
@@ -406,10 +420,12 @@ a,
 .link {
   color: #49532a;
 }
+
 a:visited,
 .link:visited {
   color: #727c51;
 }
+
 a:focus, a:hover,
 .link:focus,
 .link:hover {
@@ -420,6 +436,7 @@ button {
   color: #49532a;
   background-color: transparent;
 }
+
 button:focus, button:hover {
   color: #9ea87a;
 }
@@ -431,16 +448,15 @@ button:focus, button:hover {
   }
   section.skills ul {
     -webkit-columns: 3;
-       -moz-columns: 3;
             columns: 3;
     -webkit-column-gap: 1rem;
-       -moz-column-gap: 1rem;
             column-gap: 1rem;
   }
   section.skills ul p {
     margin: 0;
   }
 }
+
 @media (min-width: 750px) {
   .wrapper {
     margin: 0 auto;
@@ -452,10 +468,10 @@ button:focus, button:hover {
   }
   section.skills ul {
     -webkit-columns: 2;
-       -moz-columns: 2;
             columns: 2;
   }
 }
+
 @media (min-width: 1000px) {
   .wrapper {
     width: 55%;
